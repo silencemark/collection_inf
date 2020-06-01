@@ -26,7 +26,7 @@ public interface IAppIndexService {
 	List<Map<String, Object>> getAdvertisement(Map<String, Object> data);
 	
 	/**
-	 * 获取首页免费影片列表信息
+	 * 获取首页免费影片信息
 	 * @param data
 	 * @return
 	 * @author silence
