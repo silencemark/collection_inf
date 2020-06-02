@@ -46,4 +46,26 @@ public interface IAppVipCardService {
 	 */
 	Map<String, Object> getContactPhone(Map<String, Object> data);
 	
+	/**
+	 * 获取交易中会员卡列表
+	 * @param data
+	 * @return
+	 * @author silence
+	 */
+	List<Map<String, Object>> getSaleCardList(Map<String, Object> data);
+	
+	/**
+	 * 获取会员卡信息 审核页面
+	 * @param data
+	 * @return
+	 * @author silence
+	 */
+	Map<String, Object> getExamineInfo(Map<String, Object> data);
+	
+	/**
+	 * 审核通过
+	 * @param data
+	 */
+	void examinePast(Map<String, Object> data);
+	
 }
