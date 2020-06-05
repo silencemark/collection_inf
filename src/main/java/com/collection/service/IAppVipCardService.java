@@ -68,4 +68,33 @@ public interface IAppVipCardService {
 	 */
 	void examinePast(Map<String, Object> data);
 	
+	/**
+	 * 获取我的会员卡列表（审核通过）
+	 * @param data
+	 * @return
+	 */
+	List<Map<String, Object>> getMyCardList(Map<String, Object> data);
+	
+	/**
+	 * 获取会员卡信息
+	 * 和VIP卡对应的视频包
+	 * @param data
+	 * @return
+	 */
+	Map<String, Object> getMemberCardInfo(Map<String, Object> data);
+	
+	/**
+	 * 获取会员卡信息（初始化出售页面）
+	 * @param data
+	 * @return
+	 */
+	Map<String, Object> getSellCardInfo(Map<String, Object> data);
+	
+	/**
+	 * 提交立即出售
+	 * @param data
+	 */
+	void commitSellCard(Map<String, Object> data);
+	
+	
 }
