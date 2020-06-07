@@ -90,4 +90,41 @@ public interface IAppUserCenterService {
 	 * @return
 	 */
 	Map<String, Object> getMyUserInfo(Map<String, Object> data);
+	
+	/**
+	 * 修改头像
+	 * @param data
+	 */
+	void updateHeadImg(Map<String, Object> data);
+	
+	/**
+	 * 修改昵称
+	 * @param data
+	 */
+	void updateNickName(Map<String, Object> data);
+	
+	/**
+	 * 修改登录密码
+	 * @param data
+	 */
+	Map<String, Object> updatePassWord(Map<String, Object> data);
+	
+	/**
+	 * 设置支付密码
+	 * @param data
+	 */
+	void setPayPassWord(Map<String, Object> data);
+	
+	/**
+	 * 获取收款方式
+	 * @param data
+	 * @return
+	 */
+	Map<String, Object> getPaymentMethod(Map<String, Object> data);
+	
+	/**
+	 * 收款方式修改
+	 * @param data
+	 */
+	void updatePaymentMethod(Map<String, Object> data);
 }
