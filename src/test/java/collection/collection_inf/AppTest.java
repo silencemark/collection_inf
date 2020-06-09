@@ -1,4 +1,4 @@
-package labor.labor_inf;
+package collection.collection_inf;
 
 import junit.framework.Test;
 import junit.framework.TestCase;
