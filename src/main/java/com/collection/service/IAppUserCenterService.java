@@ -69,7 +69,7 @@ public interface IAppUserCenterService {
 	 * 点击兑换
 	 * @param data
 	 */
-	void exchangeVipCard(Map<String, Object> data);
+	Map<String, Object> exchangeVipCard(Map<String, Object> data);
 	
 	/**
 	 * 获取我的邀请码 和 qr邀请二维码

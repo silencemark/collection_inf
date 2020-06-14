@@ -75,6 +75,7 @@ public interface IAppVipCardService {
 	 */
 	List<Map<String, Object>> getMyCardList(Map<String, Object> data);
 	
+	
 	/**
 	 * 获取会员卡信息
 	 * 和VIP卡对应的视频包
@@ -96,5 +97,16 @@ public interface IAppVipCardService {
 	 */
 	void commitSellCard(Map<String, Object> data);
 	
+	/**
+	 * 参与抢购
+	 * @param data
+	 */
+	void insertRushToBuy(Map<String, Object> data);
 	
+	/**
+	 * 获取我的会员卡列表（抢购中）
+	 * @param data
+	 * @return
+	 */
+	List<Map<String, Object>> getRushToBuyList(Map<String, Object> data);
 }
