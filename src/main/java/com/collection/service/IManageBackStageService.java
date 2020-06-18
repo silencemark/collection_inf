@@ -36,7 +36,7 @@ public interface IManageBackStageService {
 	void updateUserInfo(Map<String, Object> data);
 	
 	/**
-	 * 获取banner信息
+	 * 获取banner信息列表
 	 * @param data
 	 * @return
 	 */
@@ -67,4 +67,30 @@ public interface IManageBackStageService {
 	 * @param data
 	 */
 	void updateBanner(Map<String, Object> data);
+	
+	/**
+	 * 获取订单列表
+	 * @param data
+	 * @return
+	 */
+	List<Map<String, Object>> getOrderList(Map<String, Object> data);
+	
+	/**
+	 * 获取订单列表次数
+	 * @param data
+	 * @return
+	 */
+	int getOrderListCount(Map<String, Object> data);
+	
+	/**
+	 * 冻结订单双方
+	 * @param data
+	 */
+	void frozenOrder(Map<String, Object> data);
+	
+	/**
+	 * 审核拒绝更改状态
+	 * @param data
+	 */
+	void updateOrderStatus(Map<String, Object> data);
 }
