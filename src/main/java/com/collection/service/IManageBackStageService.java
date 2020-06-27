@@ -133,4 +133,9 @@ public interface IManageBackStageService {
 	 */
 	int getMemberCardListCount(Map<String, Object> data);
 	
+	/**
+	 * 修改会员卡信息
+	 * @param data
+	 */
+	void updateMemberCard(Map<String, Object> data);
 }
