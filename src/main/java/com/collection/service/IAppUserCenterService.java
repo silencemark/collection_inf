@@ -126,7 +126,7 @@ public interface IAppUserCenterService {
 	 * 收款方式修改
 	 * @param data
 	 */
-	void updatePaymentMethod(Map<String, Object> data);
+	Map<String, Object> updatePaymentMethod(Map<String, Object> data);
 	
 	/**
 	 * 获取我提过的问题及回复
