@@ -37,7 +37,7 @@ public interface IAppVipCardService {
 	 * 上传支付凭证
 	 * @param data
 	 */
-	void payVipCard(Map<String, Object> data);
+	Map<String, Object> payVipCard(Map<String, Object> data);
 	
 	/**
 	 * 获取卖家/卖家信息
