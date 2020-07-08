@@ -75,6 +75,12 @@ public interface IAppVipCardService {
 	 */
 	List<Map<String, Object>> getMyCardList(Map<String, Object> data);
 	
+	/**
+	 * 获取我的历史会员卡列表
+	 * @param data
+	 * @return
+	 */
+	List<Map<String, Object>> getMyHisCardList(Map<String, Object> data);
 	
 	/**
 	 * 获取会员卡信息
