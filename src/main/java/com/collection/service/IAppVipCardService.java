@@ -91,6 +91,12 @@ public interface IAppVipCardService {
 	Map<String, Object> getMemberCardInfo(Map<String, Object> data);
 	
 	/**
+	 * 评论视频
+	 * @param data
+	 */
+	void commentMovie(Map<String, Object> data);
+	
+	/**
 	 * 获取会员卡信息（初始化出售页面）
 	 * @param data
 	 * @return

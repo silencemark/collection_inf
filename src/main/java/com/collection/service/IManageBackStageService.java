@@ -36,6 +36,26 @@ public interface IManageBackStageService {
 	void updateUserInfo(Map<String, Object> data);
 	
 	/**
+	 * 首页信息
+	 * @return
+	 */
+	Map<String, Object> getIndexInfo();
+	
+	/**
+	 * 查询通知信息
+	 * @param data
+	 * @return
+	 */
+	List<Map<String, Object>> getNoticeList(Map<String, Object> data);
+	
+	/**
+	 * 查询信息条数
+	 * @param data
+	 * @return
+	 */
+	int getNoticeListCount(Map<String, Object> data);
+	
+	/**
 	 * 获取banner信息列表
 	 * @param data
 	 * @return

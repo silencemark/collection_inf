@@ -95,7 +95,7 @@ public interface IAppUserCenterService {
 	 * 修改头像
 	 * @param data
 	 */
-	void updateHeadImg(Map<String, Object> data);
+	Map<String, Object> updateHeadImg(Map<String, Object> data);
 	
 	/**
 	 * 修改昵称
