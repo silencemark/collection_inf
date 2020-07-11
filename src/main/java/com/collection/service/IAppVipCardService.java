@@ -113,7 +113,7 @@ public interface IAppVipCardService {
 	 * 参与抢购
 	 * @param data
 	 */
-	void insertRushToBuy(Map<String, Object> data);
+	Map<String, Object> insertRushToBuy(Map<String, Object> data);
 	
 	/**
 	 * 获取我的会员卡列表（抢购中）
