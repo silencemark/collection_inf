@@ -22,7 +22,7 @@ public interface IAppUserCenterService {
 	 * @return
 	 * @author silence
 	 */
-	void signIn(Map<String, Object> data);
+	Map<String, Object> signIn(Map<String, Object> data);
 	
 	/**
 	 * 获取的会员体系成长值
@@ -135,8 +135,42 @@ public interface IAppUserCenterService {
 	List<Map<String, Object>> getMyQuestion(Map<String, Object> data);
 	
 	/**
+	 * 获取用户的通知信息列表
+	 * @param data
+	 * @return
+	 */
+	List<Map<String, Object>> getUserNotice(Map<String, Object> data);
+	
+	/**
+	 * 获取用户的消息未读数量
+	 * @param data
+	 * @return
+	 */
+	Map<String, Object> getNoticeUnreadNum(Map<String, Object> data);
+	
+	/**
 	 * 提交我的提问及投诉建议
 	 * @param data
 	 */
 	void addMyQuestion(Map<String, Object> data);
+	
+	/**
+	 *  改变用户通知消息 的未读/已读状态
+	 * @param data
+	 */
+	void updateNoticeStatus(Map<String, Object> data);
+	
+	/**
+	 * 获取xgo明细记录列表信息
+	 * @param data
+	 * @return
+	 */
+	List<Map<String, Object>> getXgoRecord(Map<String, Object> data);
+	
+	/**
+	 * 转赠xgo给对方账户
+	 * @param data
+	 * @return
+	 */
+	Map<String, Object> giveXgoToOther(Map<String, Object> data);
 }

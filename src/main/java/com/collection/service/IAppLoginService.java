@@ -31,7 +31,7 @@ public interface IAppLoginService {
 	 * 新增用户
 	 * @return 
 	 */
-	void insertUserInfo(Map<String, Object> data);
+	Map<String, Object> insertUserInfo(Map<String, Object> data);
 	
 	/**
 	 * @param data

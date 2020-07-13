@@ -107,7 +107,7 @@ public interface IAppVipCardService {
 	 * 提交立即出售
 	 * @param data
 	 */
-	void commitSellCard(Map<String, Object> data);
+	Map<String, Object> commitSellCard(Map<String, Object> data);
 	
 	/**
 	 * 参与抢购
