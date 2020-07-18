@@ -32,6 +32,14 @@ public interface IAppIndexService {
 	 * @author silence
 	 */
 	List<Map<String, Object>> getHomePageMovie(Map<String, Object> data);
+
+	/**
+	 * 模糊查询首页免费影片
+	 * @param data
+	 * @return
+	 * @author silence
+	 */
+	List<Map<String, Object>> getHomePageVideoDesc(Map<String, Object> data);
 	
 	
 }
