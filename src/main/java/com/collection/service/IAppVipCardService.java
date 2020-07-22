@@ -121,4 +121,10 @@ public interface IAppVipCardService {
 	 * @return
 	 */
 	List<Map<String, Object>> getRushToBuyList(Map<String, Object> data);
+	
+	/**
+	 * 浏览电影热度加1  type  1 普通电影  2 会员电影
+	 * @param data
+	 */
+	void addMovieHot(Map<String, Object> data);
 }

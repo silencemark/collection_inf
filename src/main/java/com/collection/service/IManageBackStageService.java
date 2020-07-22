@@ -148,6 +148,12 @@ public interface IManageBackStageService {
 	void frozenOrder(Map<String, Object> data);
 	
 	/**
+	 * 退还订单给卖家
+	 * @param data
+	 */
+	void returnOrder(Map<String, Object> data);
+	
+	/**
 	 * 审核拒绝更改状态
 	 * @param data
 	 */
