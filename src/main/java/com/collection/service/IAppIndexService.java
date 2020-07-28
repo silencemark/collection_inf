@@ -41,5 +41,50 @@ public interface IAppIndexService {
 	 */
 	List<Map<String, Object>> getHomePageVideoDesc(Map<String, Object> data);
 	
+	/**
+	 * 新增社区分享
+	 * @param data
+	 * @return
+	 */
+	Map<String, Object> addCommunity(Map<String, Object> data);
 	
+	/**
+	 * 查询朋友圈社区分享（传用户uid表示查自己的）
+	 * @param data
+	 * @return
+	 */
+	Map<String, Object> getCommunityList(Map<String, Object> data);
+	
+	/**
+	 * 查询朋友圈社区分享详情页面
+	 * @param data
+	 * @return
+	 */
+	Map<String, Object> getCommunityDetail(Map<String, Object> data);
+	
+	
+	/**
+	 * 点赞加一接口
+	 * @param data
+	 */
+	void likeCommunity(Map<String, Object> data);
+	
+	/**
+	 * 新增回复
+	 * @param data
+	 */
+	void addCommunityReply(Map<String, Object> data);
+	
+	/**
+	 * 新增评论
+	 * @param data
+	 */
+	void addCommunityComment(Map<String, Object> data);
+	
+	/**
+	 * 获取评论信息
+	 * @param data
+	 * @return
+	 */
+	List<Map<String, Object>> getCommunityComment(Map<String, Object> data);
 }

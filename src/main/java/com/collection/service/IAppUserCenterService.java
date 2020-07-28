@@ -173,4 +173,12 @@ public interface IAppUserCenterService {
 	 * @return
 	 */
 	Map<String, Object> giveXgoToOther(Map<String, Object> data);
+	
+	/**
+	 * 获取获取排行榜用户信息
+	 * @param data
+	 * @return
+	 */
+	List<Map<String, Object>> getRank(Map<String, Object> data);
+	
 }
