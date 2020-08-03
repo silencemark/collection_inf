@@ -204,6 +204,19 @@ public interface IManageBackStageService {
 	 */
 	void updateMemberCard(Map<String, Object> data);
 	
+	/**
+	 * 获取会员卡信息
+	 * @param data
+	 * @return
+	 */
+	Map<String, Object> getMemberCardInfo(Map<String, Object> data);
+	
+	/**
+	 * 获取参数配置的定时任务时间
+	 * @param data
+	 * @return
+	 */
+	String getCrontabTime(Map<String, Object> data);
 	
 	/**
 	 * 获取会员等级信息列表
