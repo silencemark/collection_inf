@@ -127,4 +127,11 @@ public interface IAppVipCardService {
 	 * @param data
 	 */
 	void addMovieHot(Map<String, Object> data);
+	
+	/**
+	 * 根据会员卡id查询手办列表
+	 * @param data
+	 * @return
+	 */
+	List<Map<String, Object>> getGarageKitList(Map<String, Object> data);
 }
