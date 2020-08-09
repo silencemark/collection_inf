@@ -133,5 +133,18 @@ public interface IAppVipCardService {
 	 * @param data
 	 * @return
 	 */
-	List<Map<String, Object>> getGarageKitList(Map<String, Object> data);
+	Map<String, Object> getGarageKitList(Map<String, Object> data);
+	
+	/**
+	 * 查询手办详情
+	 * @param data
+	 * @return
+	 */
+	Map<String, Object> getGarageKitInfo(Map<String, Object> data);
+	
+	/**
+	 * 喜欢/取消喜欢手办
+	 * @param data
+	 */
+	void likeGarageKit(Map<String, Object> data);
 }
