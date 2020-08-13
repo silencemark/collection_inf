@@ -2,6 +2,8 @@ package com.collection.service;
 
 import java.util.List;
 import java.util.Map;
+
+import org.bouncycastle.jce.provider.PBE;
 /**
  * app首页相关
  * @author silence
@@ -87,4 +89,11 @@ public interface IAppIndexService {
 	 * @return
 	 */
 	List<Map<String, Object>> getCommunityComment(Map<String, Object> data);
+	
+	/**
+	 * 获取系统消息最新的一条
+	 * @param data
+	 * @return
+	 */
+	Map<String, Object> getNewSystemNotice(Map<String, Object> data);
 }

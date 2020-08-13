@@ -139,7 +139,7 @@ public interface IAppUserCenterService {
 	 * @param data
 	 * @return
 	 */
-	List<Map<String, Object>> getUserNotice(Map<String, Object> data);
+	Map<String, Object> getUserNotice(Map<String, Object> data);
 	
 	/**
 	 * 获取用户的消息未读数量

@@ -116,6 +116,13 @@ public interface IAppVipCardService {
 	Map<String, Object> insertRushToBuy(Map<String, Object> data);
 	
 	/**
+	 * 获取用户阅读用户协议标识
+	 * @param data
+	 */
+	Map<String, Object> getUserAgreementStatus(Map<String, Object> data);
+	
+	
+	/**
 	 * 获取我的会员卡列表（抢购中）
 	 * @param data
 	 * @return
