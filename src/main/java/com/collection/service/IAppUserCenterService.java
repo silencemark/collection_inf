@@ -35,7 +35,7 @@ public interface IAppUserCenterService {
 	 * 进行认证
 	 * @param data
 	 */
-	void certification(Map<String, Object> data);
+	Map<String, Object> certification(Map<String, Object> data);
 	
 	/**
 	 * 获取实名认证进度
