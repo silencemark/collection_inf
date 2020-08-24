@@ -101,7 +101,7 @@ public interface IAppUserCenterService {
 	 * 修改昵称
 	 * @param data
 	 */
-	void updateNickName(Map<String, Object> data);
+	Map<String, Object> updateNickName(Map<String, Object> data);
 	
 	/**
 	 * 修改登录密码
